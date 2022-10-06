@@ -1,0 +1,27 @@
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.main-nav-top-large{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+
+}
+
+.main-nav-top-large ul{
+    display: flex;
+    flex-direction: row;
+    margin: 4px 0 0;
+}
+
+.main-nav-top-large ul li{
+    display: list-item;
+    font-size: 14px;
+    margin: 0 24px 2px 0;
+}
