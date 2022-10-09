@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 
@@ -111,6 +113,12 @@ body{
 }
 
 @media(max-width: 768px){
+
+    *{
+        font-family: inherit;
+    }
+
+
     .main-nav-top-large-container{
         display: none;
     }
@@ -127,6 +135,40 @@ body{
     .medium-10{
         width: 90%;
     }
+
+    .login-bar-medium{
+        background-color:#3A5A40;
+    }
+
+    .column-login-bar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-login-bar{
+        display:flex;
+        flex-direction: row;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: auto;
+        margin-top: 8px;
+        width: 95%;
+    }
+
+    .row-input{
+        width: 41%;
+        font-size: 16px;
+        font-weight: bolder;
+        border: 1px solid #d1c9c0;
+        display: inline-block;
+        box-shadow: none;
+    }
+
+
+
+
+
+
 }
 
 
