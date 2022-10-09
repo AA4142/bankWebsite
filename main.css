@@ -11,6 +11,8 @@ body{
 
 
 
+
+
 .row{
     margin-left: auto;
     margin-right: auto;
@@ -18,11 +20,21 @@ body{
     padding-right: 12px;
 }
 
+.main-nav-top-large-container{
+    clear:both;
+}
+
+.main-nav-top-large-container .row{
+
+        background-color: #A3B18A;
+
+}
+
+
 .main-nav-top-large{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2px;
 
 }
 
@@ -56,26 +68,71 @@ body{
 }
 
 
-
-/*
-a{
-    
+.menu-container{
+    overflow: hidden;
+    background-color: #A3B18A;
+    position: relative;
+    max-height: 800px;
 }
-*/
+
+.medium-10{
+    margin: auto;
+    width: 60%;
+}
+
+
+.main-nav-top-items{
+    display: flex;
+    flex-wrap: wrap;
+    height: 280px;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px 0 0;
+    list-style-type: none;
+    width: 60%;
+}
+
+.main-nav-top-items li{
+    max-width: 60%;
+    margin: 8px 16px;
+}
+
+
+.main-nav-top-items li a{
+    text-decoration-style: solid;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+@media(max-width: 480px){
+
+}
+
 @media(max-width: 768px){
+    .main-nav-top-large-container{
+        display: none;
+    }
+
+
+    .main-nav-top-items{
+        height: 50%;
+        max-height: 600px;
+        overflow: hidden;
+        
+
+    }
+
+    .medium-10{
+        width: 90%;
+    }
+}
+
 
 
 }
 
 @media (max-width: 1300px){
-
-}
-
-@media only screen and (min-width: 1025px){
-    .header-module-class-v-16-0-0,
-    .main-nav-top-logo{
-        margin-bottom: 1px;
-        padding: 15px 10px 0 20px;
-    }
 
 }
