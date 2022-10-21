@@ -99,14 +99,14 @@
 /* Animation */
 
 .menu-icon.open span{
-    transform: translatex(-50px);
+    transform: translatex(-20px);
     background: transparent;
 }
 
 .menu-icon.open span::before{
-    transform: rotate(45deg) translate(39px, -30px);
+    transform: rotate(45deg) translate(18px, -9px);
 }
 
 .menu-icon.open span::after{
-    transform: rotate(-45deg) translate(39px, 30px);
+    transform: rotate(-45deg) translate(18px, 9px);
 }
