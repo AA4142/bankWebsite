@@ -164,21 +164,28 @@
 
 .columns-nav{
     padding: 0px 8px;
-    height: 512px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #9C948F;
+    opacity: 70%;
+    padding-top: 10px;
+
 }
 
 
 .main-nav-top-items{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-left: 30px;
     list-style-type: none;
-
+    height: 512px;
 }
 
 .mobile-link{
     text-decoration: none;
+    text-decoration-color: black;
+    color: black;
     font-size: 16px;
 
 }
@@ -186,4 +193,43 @@
 .mobile-link:hover{
     border-bottom: solid black;
     border-width: 2px;
+}
+
+.headerMenuContainer{
+    z-index: -1;
+    left: -1000px;
+    position: absolute;
+}
+
+.headerMenuContainer.open{
+    left: 0;
+    position: relative;
+    transition: ease .3s;
+
+}
+
+.mastheadContainer{
+    transition: ease .3s;
+}
+
+.mastheadContainer .headlineRow{
+    padding-top: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 8px;
+}
+
+.cardContainer{
+    margin-bottom: 30px;
+}
+
+.cardImageColumn{
+    
+}
+
+.cardRow{
+    display: flex;
+    align-items: center;
+    width: 425px;
+    max-width: 1296px;
 }
