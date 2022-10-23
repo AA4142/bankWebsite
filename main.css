@@ -150,3 +150,40 @@
     margin-left: 12px;
 }
 
+.search-form form .searchButton:hover{
+    background-color: #4169E1;
+    transition: ease .3s;
+    color: white;
+}
+
+.search-form form input:hover{
+    border: solid #4169E1;
+    transition: ease .5s;
+    border-width: 1px;
+}
+
+.columns-nav{
+    padding: 0px 8px;
+    height: 512px;
+}
+
+
+.main-nav-top-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 30px;
+    list-style-type: none;
+
+}
+
+.mobile-link{
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.mobile-link:hover{
+    border-bottom: solid black;
+    border-width: 2px;
+}
