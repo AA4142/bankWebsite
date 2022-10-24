@@ -249,11 +249,12 @@
 }
 
 .cardImageColumn{
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 .columnItem{
     margin-left: 30px;
+    flex-basis: 45%;
 }
 
 .columnItem span a{
