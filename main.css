@@ -310,3 +310,44 @@
     font-size: 22px;
     color: rgb(255,255,255);
 }
+
+.login-columns{
+    display: block;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 80px;
+
+}
+
+
+.login-columns-flex{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    font-family: roboto;
+}
+
+.login-columns-flex h2{
+    font-size: 20px;
+}
+
+.inputBox{
+    border: solid 1px;
+    border-color: rgb(204,204,204);
+}
+
+.radio-input{
+    margin-top: 8px;
+    margin-bottom: 38px;
+    font-size: 13px;
+}
+
+.radio-input input{
+    margin-top: 2px;
+    margin-right: 6px;
+    border-radius: 50%;
+
+}
+
+
