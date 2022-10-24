@@ -305,7 +305,7 @@
 }
 
 .style-bar-red h1{
-    padding: 10px 0px;
+    padding: 15px 0px;
     font-family: roboto;
     font-size: 22px;
     color: rgb(255,255,255);
@@ -335,19 +335,60 @@
 .inputBox{
     border: solid 1px;
     border-color: rgb(204,204,204);
+    font-size: 12px;
+    padding: 4px 2px;
+    width: 209px;
 }
 
-.radio-input{
+.checkbox-input{
     margin-top: 8px;
     margin-bottom: 38px;
     font-size: 13px;
 }
 
-.radio-input input{
+.checkbox-input input{
     margin-top: 2px;
     margin-right: 6px;
     border-radius: 50%;
 
 }
 
+#userUserpassword{
+    padding: 4px 2px;
+    margin-bottom: 24px;
 
+}
+
+.passwordHeader{
+    margin-top: 15px;
+    padding-bottom: 4px;
+
+}
+
+
+
+.user-login-column a{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#forgotPassword:hover{
+    text-decoration: underline;
+}
+
+.loginButtonDiv{
+    margin-top: 30px;
+    padding: 14px 1px;
+}
+
+.loginButton{
+    background: linear-gradient(rgb(0, 125, 195), rgb(0, 103, 177));
+    border-radius: 5px;
+    border-color: rgb(18, 78, 137);
+    color: rgb(255,255,255);
+    padding: 5px 20px;
+}
+
+.loginButton:hover{
+    background: linear-gradient(rgb(0, 103, 177), rgb(0,125, 195))
+}

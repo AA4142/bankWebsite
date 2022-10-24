@@ -23,12 +23,27 @@
             <div class="login-columns-flex">
                 <div class="user-login-column">
                     <h2>User ID</h2>
-                    <input type="text" class="inputBox">
+                    <input type="text" class="inputBox" id="userUsername">
                     <br>
-                    <div class="radio-input">
-                        <input type="radio" id="saveID">
+                    <div class="checkbox-input">
+                        <input type="checkbox" id="saveID">
                         <label for="saveID">Save this User ID?</label>
                     </div>
+
+                    <h2 class="passwordHeader">Password</h2>
+                    <input type="text" class="inputBox" id="userUserpassword">
+                    <br>
+                    <a href="#forgotPassword" id="forgotPassword">Forgot your Password?</a>
+                    <br>
+
+                    <div class="loginButtonDiv">
+
+                        <a href="#log in" onclick="submitForm()" role="button" class="loginButton">
+                            <span class="blue-login-button">Login</span>
+                        </a>
+                    </div>
+
+                 
          
                 </div>
 
