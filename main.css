@@ -45,6 +45,10 @@
     padding-right: 8px;
 }
 
+#login-small:hover{
+    text-decoration: underline;
+}
+
 
 .hide-for-large-up{
     display: flex;
