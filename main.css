@@ -270,3 +270,43 @@
 .columnItem span a:hover{
     text-decoration: underline;
 }
+
+
+/*login.html styling */
+
+
+.login-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+.login-logo-container img{
+    height: 30px;
+    width: 270px;
+}
+
+.page-type{
+    font-family: roboto;
+    font-size: 20px;
+    color: rgb(131,115,97);
+    padding-top: 3px;
+    margin-left: 25px;
+}
+
+.style-bar-red{
+    background-color: #DC1431;
+    padding: 0px 25px;
+}
+
+.style-bar-red h1{
+    padding: 10px 0px;
+    font-family: roboto;
+    font-size: 22px;
+    color: rgb(255,255,255);
+}
