@@ -275,6 +275,19 @@
 /*login.html styling */
 
 
+/*column 1 and 2 styling */
+.column-1-styling{
+    border-right: solid 1px #9C948F;
+    padding-right: 80px;
+
+}
+
+.column-2-styling{
+    margin-top: 10px;
+    padding-left: 60px;
+}
+
+
 .login-header{
     display: flex;
     flex-direction: row;
@@ -391,4 +404,55 @@
 
 .loginButton:hover{
     background: linear-gradient(rgb(0, 103, 177), rgb(0,125, 195))
+}
+
+
+/* Column 2 inside styling */
+
+.column-2-flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-2-paragraph{
+    margin-bottom: 5px;
+}
+
+.column-2-paragraph p{
+    font-size: 18px;
+}
+
+.mobile-phone-image img{
+    margin-top: 15px;
+    width: 149px;
+    height: auto;
+}
+
+.get-app-content{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.get-app-content p{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.get-app-content a{
+    padding-top: 10px;
+}
+
+.red-app-button{
+    background: linear-gradient(rgb(220, 20, 49), rgb(196, 18, 48));
+    border-radius: 5px;
+    border-color: rgb(187, 41, 43);
+    color: rgb(255,255,255);
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.red-app-button:hover{
+    background: linear-gradient(rgb(196, 18, 48), rgb(220, 20, 49) )
 }
