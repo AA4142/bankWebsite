@@ -7,7 +7,11 @@ const express = require("express");
 
 //create the express application with the pulled module
 const app = express();
+
+//we are getting cors from NodeJS and then initializing it as cors
 const cors = require("cors");
+
+
 require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 5000;
 app.use(cors());
