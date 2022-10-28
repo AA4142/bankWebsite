@@ -216,15 +216,24 @@
 
 }
 
+.cardWrapper{
+    position: absolute;
+    left: -50px;
+}
+
 .mastheadContainer{
     transition: ease .3s;
+    
 }
 
 .mastheadContainer .headlineRow{
     padding-top: 14px;
-    padding-left: 8px;
+    padding-left: 15px;
     padding-right: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 .cardContainer{
@@ -234,10 +243,26 @@
     width: 100%;
 }
 
-.cardImageColumn{
+.cardImageColumn picture img{
     left: -58.76px;
+    transform: rotate(-10deg);
 }
 
+.lowerCard{
+    margin-top: -30px;
+}
+
+#cardTwo{
+    z-index: -1;
+}
+
+#cardThree{
+    z-index: -2;
+}
+
+#cardFour{
+    z-index: -3;
+}
 
 .cardImageColumn picture img{
     max-width: 100%;
@@ -253,16 +278,18 @@
 }
 
 .cardImageColumn{
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 
 .columnItem{
+    padding-left: 20px;
     margin-left: 30px;
     flex-basis: 45%;
 }
 
 .columnItem span a{
-    font-size: 20px;
+    font-weight: 100;
+    font-size: 22px;
     color: rgb(0, 82, 194);
     text-decoration: none;
 }
