@@ -196,15 +196,15 @@
 
 }
 
+
 .mobile-link:hover{
     cursor: pointer;
     text-decoration: underline;
-    border-bottom: solid black;
-    border-width: 2px;
 }
 
+
 .headerMenuContainer{
-    z-index: -1;
+
     left: -1000px;
     position: absolute;
 }
@@ -219,6 +219,7 @@
 .cardWrapper{
     position: absolute;
     left: -50px;
+    margin-top: 20px;
 }
 
 .mastheadContainer{
