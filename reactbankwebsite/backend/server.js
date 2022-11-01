@@ -30,6 +30,12 @@ connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 });
 
+//getting the module info from ./routes/user for API end point
+const userRouter = require('./routes/user');
+
+//when someone goes to our Route url '/user' it will load everything in our userRouter 
+app.use('/user', userRouter);
+
 
 //listens to connections to our server
 app.listen(port, () => {
