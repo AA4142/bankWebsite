@@ -26,5 +26,20 @@ router.route('/add').post((req, res) =>{
         .catch((err) => res.status(400).json('Error ' + err));
 })
 
+router.route('/:id').get((req, res) => {
+    User.findById(req.params.id)
+        .then(user => res.json(user.username))
+        .catch(err => res.status(400).json('Error: ' + err));
+})
+
+router.route('/:id').delete((req, res) => {
+    User.findByIdAndDelete(req.params.id)
+        .then(() => res.json("user deleted"))
+        .catch(err => res.status(400).json('Error: ' + err));
+})
+
+
+//real production probably includes update and delete
+
 
 module.exports = router;
