@@ -9,29 +9,27 @@ const userSchema = new Schema({
     password:{ type: String, required: true, }
 }, {
     timestamps: true
-})
+});
 
-const User = mongoose.model('User', userSchema);
 
 userSchema.pre('save', async function (next) {
     try{
-        console.log("called before saving a user");
-
+        const salt = await bcrypt.genSalt(10)
+        const hashedPassword = await bcrypt.hash(this.password, salt);
+        this.password = hashedPassword;
+        next()
     } catch(error){
         next(error)
     }
+});
 
-} )
 
-userSchema.post('save', async function (next) {
-    try{
-        console.log("called after saving a user");
 
-    } catch(error){
-        next(error)
-    }
 
-} )
+
+
+
+const User = mongoose.model('User', userSchema);
 
 
 
