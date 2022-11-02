@@ -12,32 +12,28 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
-//parses incoming requests
-//returns middleware that only parses JSON and only looks at requests where content-typer header matches sttype.
 app.use(express.json());
 
-//const uri is the variable that allows us to connect to our database, and the process.env.ATLAS_URI; 
-//stores our link to the database
+
 const uri = process.env.ATLAS_URI;
-//we are then able to connect to the database with mongoose.connect which uses the variable 
-//that is stored in dotenv
+
 mongoose.connect(uri, {});
 
-//we get the object instance of the connection b/c we are now connected to the server
+
 const connection = mongoose.connection;
-//on the first connection when we 'open' the server we want to console.log it
+
 connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 });
 
-//getting the module info from ./routes/user for API end point
+
 const userRouter = require('./routes/user');
 
-//when someone goes to our Route url '/user' it will load everything in our userRouter 
+
 app.use('/user', userRouter);
 
 
-//listens to connections to our server
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });

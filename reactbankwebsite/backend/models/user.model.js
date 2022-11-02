@@ -1,19 +1,38 @@
-//we get the mongoose framework so we can create the schema to talk to database
+
 const mongoose = require('mongoose');
-
-//technically we don't have to do this, but it allows us to not have to declare 
-//a new Schema everytime we create a new Schema
 const Schema = mongoose.Schema;
+const bcrypt = require('bcrypt')
 
-//this is our user Model it is a Schema with validations
-// we know it's a string thats required and unique , remove white space and a minimum length of 3
-//timestamps gives us when created and when modified
 const userSchema = new Schema({
     username: {type: String, required: true, unique: true, trim: true, minlength: 3 },
+    email: { type:String, required: true, lowercase: true, unique: true, },
+    password:{ type: String, required: true, }
 }, {
     timestamps: true
 })
 
 const User = mongoose.model('User', userSchema);
+
+userSchema.pre('save', async function (next) {
+    try{
+        console.log("called before saving a user");
+
+    } catch(error){
+        next(error)
+    }
+
+} )
+
+userSchema.post('save', async function (next) {
+    try{
+        console.log("called after saving a user");
+
+    } catch(error){
+        next(error)
+    }
+
+} )
+
+
 
 module.exports = User;
